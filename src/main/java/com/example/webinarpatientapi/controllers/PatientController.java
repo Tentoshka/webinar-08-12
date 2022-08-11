@@ -56,7 +56,7 @@ public class PatientController {
         PatientEntity updatedPatient = patientRepo.save(patientEntity);
         return PatientMapper.toDto(updatedPatient);
     }
-
+    //
     @DeleteMapping("/{id}")
     @ResponseStatus(value = HttpStatus.OK)
     @ResponseBody
